@@ -8,8 +8,10 @@ import json
 from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 import multiprocessing as mp
+from dotenv import dotenv_values
 
-client = MongoClient('mongodb+srv://kmoro:13091989morozova@cluster0.3k2urwx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', server_api=ServerApi('1'))
+config = dotenv_values(".env")
+client = MongoClient(f'mongodb+srv://{config.MONGO_DB_USER}:{config.MONGO_DB_PASSWORD}@cluster0.3k2urwx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', server_api=ServerApi('1'))
 
 db= client.users
 
@@ -111,7 +113,7 @@ def main():
     http_process = mp.Process(target=start_http_server)
     http_process.start()
 
-    # Start socket server in the main process
+    # main process
     start_socket_server()
     
 if __name__ == '__main__':

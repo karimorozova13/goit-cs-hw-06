@@ -1,0 +1,56 @@
+[{
+  "_id": {
+    "$oid": "6628fcac1a48efcb46a57240"
+  },
+  "username": "Kari",
+  "message": "yftytjytj",
+  "date": "2024-04-24 15:35:56.491634"
+},
+{
+  "_id": {
+    "$oid": "6628ffa832fe4e8d1dbe8a59"
+  },
+  "username": "Platon",
+  "message": "ghfghfghfg",
+  "date": "2024-04-24 15:48:40.578258"
+},
+{
+  "_id": {
+    "$oid": "66290283f61eefe3b0196770"
+  },
+  "username": "tetyana",
+  "message": "hgfhfghgfh",
+  "date": "2024-04-24 16:00:51.164634"
+},
+{
+  "_id": {
+    "$oid": "6629095c9932f2bf63517894"
+  },
+  "username": "example",
+  "message": "hgfhgjhg",
+  "date": "2024-04-24 13:30:04.941359"
+},
+{
+  "_id": {
+    "$oid": "66290dc31439a80ac84e8755"
+  },
+  "username": "themis",
+  "message": "fgdfgdfgd",
+  "date": "2024-04-24 13:48:51.681260"
+},
+{
+  "_id": {
+    "$oid": "66290dc41439a80ac84e8756"
+  },
+  "username": "themis",
+  "message": "fgdfgdfgd",
+  "date": "2024-04-24 13:48:52.278675"
+},
+{
+  "_id": {
+    "$oid": "6629febd769e0fff7b65455b"
+  },
+  "username": "env",
+  "message": "test",
+  "date": "2024-04-25 06:57:01.085544"
+}]
