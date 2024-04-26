@@ -1,14 +1,13 @@
+
 FROM python:3.10
 
 WORKDIR /app
 
-COPY main.py .
-COPY index.html .
-COPY error.html .
-COPY message.html .
-COPY style.css .
-COPY logo.png .
+COPY . .
 
-RUN pip install pymongo
+RUN pip install -r requirements.txt
+
+EXPOSE 80
 
 CMD ["python", "main.py"]
+

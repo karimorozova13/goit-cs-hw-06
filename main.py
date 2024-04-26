@@ -11,6 +11,8 @@ import multiprocessing as mp
 from dotenv import dotenv_values
 
 config = dotenv_values(".env")
+# client = MongoClient(f'mongodb+srv://kmoro:13091989morozova@cluster0.3k2urwx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', server_api=ServerApi('1'))
+
 client = MongoClient(f'mongodb+srv://{config.MONGO_DB_USER}:{config.MONGO_DB_PASSWORD}@cluster0.3k2urwx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', server_api=ServerApi('1'))
 
 db= client.users

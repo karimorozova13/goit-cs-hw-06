@@ -1,3 +1,4 @@
+
 version: "3"
 
 services:
@@ -7,10 +8,18 @@ services:
       - "3000:3000"
     depends_on:
       - db
+    environment:
+      - PYTHONPATH=./venv
 
   db:
     image: mongo
     ports:
       - "27017:27017"
     volumes:
-      - ./data/db:/data/db # Persist MongoDB data outside the container
+      - ./storage:/data/db 
+
+volumes:
+  storage: 
+
+
+
